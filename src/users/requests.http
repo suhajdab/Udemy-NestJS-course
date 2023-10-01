@@ -1,0 +1,53 @@
+### Users
+GET http://localhost:3000/users
+
+### Get user by id
+GET http://localhost:3000/users/2
+
+### Get user by email
+GET http://localhost:3000/users?email=name@example.com
+
+### Signup
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+  "email": "name1234@example.com",
+  "password": "password123"
+}
+
+### Duplicate Signup
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+  "email": "name@example.com",
+  "password": "password{{$randomInt 111 999}}"
+}
+
+### Signin
+POST http://localhost:3000/users/signin
+Content-Type: application/json
+
+{
+  "email": "name123@example.com",
+  "password": "password123"
+}
+
+### Whoami
+GET http://localhost:3000/users/whoami
+
+### Signout
+POST http://localhost:3000/users/signout
+
+### Update user
+PATCH http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+  "email": "name{{$randomInt 111 999}}@example.com",
+  "password": "password{{$randomInt 111 999}}"
+}
+
+### Delete user
+DELETE http://localhost:3000/users/7

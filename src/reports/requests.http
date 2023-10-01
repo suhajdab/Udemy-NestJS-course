@@ -1,0 +1,35 @@
+### List all realestate
+GET http://localhost:3000/reports
+
+### Add realestate
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+  "title": "My new realestate",
+  "description": "My new realestate description",
+  "price": 100000,
+  "address": "My new realestate address",
+  "type": "house",
+  "rooms": 3,
+  "area": 100,
+  "latitude": 12.345678,
+  "longitude": 12.345678,
+  "built": 2010
+}
+
+
+
+
+
+### Signin
+POST http://localhost:3000/users/signin
+Content-Type: application/json
+
+{
+  "email": "name123@example.com",
+  "password": "password123"
+}
+
+### Signout
+POST http://localhost:3000/users/signout
