@@ -19,6 +19,9 @@ export class Report {
   address: string;
 
   @Column()
+  built: number;
+
+  @Column()
   type: Type;
 
   @Column()

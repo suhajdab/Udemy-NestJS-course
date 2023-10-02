@@ -6,16 +6,14 @@ POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-  "title": "My new realestate",
-  "description": "My new realestate description",
   "price": 100000,
-  "address": "My new realestate address",
+  "address": "My newer realestate address",
   "type": "house",
   "rooms": 3,
   "area": 100,
   "latitude": 12.345678,
   "longitude": 12.345678,
-  "built": 2010
+  "built": 2020
 }
 
 
